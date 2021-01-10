@@ -1,0 +1,277 @@
+body, 
+html {
+    height: 100%;
+
+}
+body {
+    background: url("espacio.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+.menu {
+    position: fixed;
+    color: #fff;
+    top:40px
+}
+.menu ul {
+    list-style: none;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:50px;
+    padding:0;
+}
+
+.menu ul li {
+    background-color:#000000;
+    box-shadow: 0 0 10px 0 #1a17ce;
+    float:none;
+    width:150px;
+    height:20px;
+}
+
+.menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-family: 'Russo One', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.menu ul li:hover {
+    background:#5b78a7;
+   }
+.menu:hover>ul {
+    display: block;
+    position: relative;
+}
+.header{
+    background: #000000;
+    padding: 5px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #000000;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #1a17ce;
+    height: 90px;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    display: none;
+    height: 50px;
+    width: auto;
+    padding-left: 100px;
+}
+
+i {
+    margin-left: 15px;
+}
+.social{
+    display: block;
+    margin-left: 30%;
+}
+    .social a:hover{
+        color: #343434;
+    }
+
+.audio{
+    position: absolute;
+    bottom: -300%;
+    left: 20%;
+}
+
+.imagen {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.twitter {
+    color: #00acee;
+}
+
+.whatsapp {
+    color: #00bb2d;
+}
+
+.playstore {
+    color:  #fff;
+}
+
+.ios {
+    color: #5fc9f8;
+}
+
+
+@media (min-width:900px) {
+    .navbar {
+        width: 97%;
+    
+    }
+
+    i {
+        margin-left: 26px;
+    }
+    .imagen {
+        width: 800px;
+        height: 500px;
+    }
+    .logo {
+        display: block;
+        height: 90px;
+    }
+    .audio {
+        bottom: 0px;
+        left: 35%;
+    }
+   .container2 {
+    right: 500px;
+   }
+    .video {
+        margin-left: 100px;
+    }
+}
+
+
+.container2 {
+    box-sizing: border-box;
+    background-color: #000000;
+    color:#ee3746;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #1a17ce;
+    position: fixed;
+    z-index: 10;
+    bottom: 3%;
+    width: 400px;
+    height: 50px;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+    line-height: 25%;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25%;
+    font-family: 'Russo One', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+    a {
+        color: #e2636d;
+    }
+
+    a:hover {
+        color: #811d25;
+    }
+.slider {
+	
+    overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 600%;
+	animation: cambio 50s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	15% {margin-left: 0;}
+	
+	16.7% {margin-left: -100%;}
+	33.4% {margin-left: -100%;}
+	
+	34.4% {margin-left: -200%;}
+	50.1% {margin-left: -200%;}
+	
+	51.1% {margin-left: -300%;}
+    66.8% {margin-left: -300%;}
+    
+    67.8% {margin-left: -400%;}
+    83.5% {margin-left: -400%;}
+
+    84.5% {margin-left: -500%;}
+    100% {margin-left: -500%;}
+}
+
+#ranking {
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    color: #ee3746;
+    font-family: 'Russo One', sans-serif;
+    position: relative;
+    top: 110%;
+    z-index: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #1a17ce;
+}
+
+#ranking h1 {
+    display: flex;
+    text-shadow: 5px 5px 5px #641309;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.video {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#noticias {
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    color: #ee3746;
+    font-family: 'Russo One', sans-serif;
+    position: relative;
+    top: 275%;
+    z-index: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #1a17ce;
+}
+
+#noticias h1 {
+    display: flex;
+    text-shadow: 5px 5px 5px #641309;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
